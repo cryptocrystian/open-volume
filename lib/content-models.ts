@@ -10,6 +10,7 @@ export interface Experience {
   status: ExperienceStatus;
   summary: string;
   heroMedia?: string;
+  heroAlt?: string;
   story?: string;
   credits?: string[];
   partners?: string[];
@@ -28,7 +29,9 @@ export interface Story {
   publishedAt?: string;
   excerpt: string;
   heroMedia?: string;
+  heroAlt?: string;
   body?: string;
   artists?: string[];
   relatedExperience?: string;
+  isDraft?: boolean;
 }

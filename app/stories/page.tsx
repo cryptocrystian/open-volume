@@ -1,4 +1,6 @@
-import { ArrowLink, Section } from "@/components/section";
+import { Section } from "@/components/section";
+import { StoryCard } from "@/components/story-card";
+import { launchStoryConcepts } from "@/lib/launch-content";
 
 export const metadata = { title: "Stories" };
 
@@ -9,9 +11,12 @@ export default function StoriesPage() {
         <div className="section-inner">
           <p className="eyebrow">Open Volume / Stories</p>
           <h1 className="display">Follow the ideas around the music.</h1>
-          <p className="page-copy">Open Volume Stories explores the people, places, processes and perspectives shaping how music is experienced. Not everything meaningful happens on stage.</p>
+          <p className="page-copy">
+            Open Volume Stories explores the people, places, processes and perspectives shaping how music is experienced. Not everything meaningful happens on stage.
+          </p>
         </div>
       </section>
+
       <Section tone="light" eyebrow="Editorial">
         <div className="rule-list">
           <div className="rule-row"><p>Artists</p><p>Conversations with artists, producers, vocalists and collaborators about the work, the choices behind it and where they want to take it next.</p></div>
@@ -21,10 +26,22 @@ export default function StoriesPage() {
           <div className="rule-row"><p>Discovery</p><p>Artists, sounds, scenes and creative work worth paying attention to.</p></div>
         </div>
       </Section>
-      <Section eyebrow="Launch State">
-        <h2 className="display display--medium">The first stories are on the way.</h2>
-        <p className="body-large">We would rather publish something worth reading than fill a grid for the sake of looking busy.</p>
-        <ArrowLink href="/join">Stay Close</ArrowLink>
+
+      <Section eyebrow="In development">
+        <div className="section-heading-row">
+          <div>
+            <p className="eyebrow">First editorial concepts</p>
+            <h2 className="display display--small">A publishing system built around taste, not volume.</h2>
+          </div>
+          <p className="body-large">
+            These concepts validate the editorial system while the first commissioned stories, artists and production imagery are being developed.
+          </p>
+        </div>
+        <div className="story-grid">
+          {launchStoryConcepts.map((story, index) => (
+            <StoryCard key={story.slug} story={story} featured={index === 0} />
+          ))}
+        </div>
       </Section>
     </>
   );
