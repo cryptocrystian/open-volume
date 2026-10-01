@@ -1,7 +1,7 @@
 ---
 title: "What makes a music experience worth remembering?"
 category: "perspective"
-status: "draft"
+status: "approved"
 excerpt: "Beyond scale and spectacle: presence, intention, place and the details that give a performance weight after it ends."
 ---
 
@@ -45,7 +45,7 @@ Spectacle is easy to recognize.
 
 Presence is harder to describe.
 
-It can come from the distance between an artist and an audience. The way a room changes when a vocal enters. The moment the lighting disappears instead of getting brighter. A camera move that makes a performance suddenly feel intimate. A crowd reaction that could never be recreated on cue.
+It can come from the distance between an artist and an audience. The way a room changes when a vocal enters. The moment the lighting disappears instead of getting brighter. A camera move that makes a performance suddenly feel intimate. A crowd reaction that no cue can fully manufacture.
 
 Those details do not always look enormous in isolation.
 
@@ -65,7 +65,7 @@ The same track can feel different at sunrise, underground, in a crowded room, ag
 
 That is when place stops being backdrop and starts becoming part of the creative direction.
 
-Open Volume is built to work across physical, virtual and hybrid environments for exactly that reason.
+Open Volume is being built to work across physical, virtual and hybrid environments for exactly that reason.
 
 Not because every performance should use every format.
 
@@ -73,7 +73,7 @@ Because different ideas deserve different places to exist.
 
 ## Tension matters
 
-A memorable experience cannot remain at maximum intensity from beginning to end.
+A memorable experience rarely benefits from remaining at maximum intensity from beginning to end.
 
 It needs shape.
 
