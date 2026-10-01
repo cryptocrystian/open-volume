@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { JoinForm } from "@/components/join-form";
 import { ArrowLink, MediaPlaceholder, Section } from "@/components/section";
 
 export default function HomePage() {
@@ -120,10 +120,7 @@ export default function HomePage() {
         <h2 className="display display--medium">Be there before it happens.</h2>
         <p className="body-large">New performances. Artist stories. Premieres. Places. Collaborations. Open Volume announcements.</p>
         <p className="body-large">Shared when there is something worth sharing.</p>
-        <form className="signup-form" action="#">
-          <input type="email" name="email" placeholder="Email address" aria-label="Email address" />
-          <button type="submit">Join Open Volume ↗</button>
-        </form>
+        <JoinForm source="homepage" />
       </Section>
     </>
   );

@@ -1,3 +1,4 @@
+import { JoinForm } from "@/components/join-form";
 import { Section } from "@/components/section";
 
 export const metadata = { title: "Join" };
@@ -8,10 +9,7 @@ export default function JoinPage() {
       <h1 className="display">Be there before it happens.</h1>
       <p className="page-copy">Open Volume is building new performances, artist collaborations, places, stories and experiences.</p>
       <p className="body-large">Join for early announcements, premieres, artist features, editorial and the moments worth knowing about before everyone else does.</p>
-      <form className="signup-form" action="#">
-        <input type="email" name="email" placeholder="Email address" aria-label="Email address" />
-        <button type="submit">Join Open Volume ↗</button>
-      </form>
+      <JoinForm source="join-page" />
       <div className="page-block">
         <p className="body-large"><strong>No filler. No constant noise.<br />Just the things worth sharing.</strong></p>
       </div>
