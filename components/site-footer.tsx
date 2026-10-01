@@ -1,10 +1,11 @@
 import Link from "next/link";
+import { BrandSignature } from "@/components/brand-signature";
 
 export function SiteFooter() {
   return (
     <footer className="site-footer">
       <div>
-        <p className="footer-brand">OPEN VOLUME</p>
+        <BrandSignature context="footer" />
         <p className="footer-taxonomy">Music / Culture / Experiences / People / Places / Ideas</p>
       </div>
       <div className="footer-links">
@@ -16,10 +17,8 @@ export function SiteFooter() {
           <Link href="/join">Join</Link>
         </div>
         <div>
-          <a href="#" aria-label="Instagram placeholder">Instagram</a>
-          <a href="#" aria-label="YouTube placeholder">YouTube</a>
-          <a href="#" aria-label="TikTok placeholder">TikTok</a>
-          <a href="#" aria-label="LinkedIn placeholder">LinkedIn</a>
+          <span className="footer-label">Channels</span>
+          <span className="footer-muted">Profile links pending launch</span>
         </div>
       </div>
     </footer>
