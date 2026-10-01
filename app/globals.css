@@ -269,3 +269,162 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+
+
+/* Media + editorial system */
+.section-heading-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, .8fr);
+  gap: clamp(3rem, 7vw, 8rem);
+  align-items: end;
+  margin-bottom: 4rem;
+}
+
+.media-frame {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  width: 100%;
+  background:
+    radial-gradient(circle at 78% 30%, rgba(162,71,54,.12), transparent 24%),
+    linear-gradient(145deg, #242420 0%, #1a1a18 52%, #30342f 100%);
+  border: 1px solid var(--line-dark);
+}
+.section--light .media-frame { border-color: var(--line-light); }
+.media-frame--wide { aspect-ratio: 4 / 3; }
+.media-frame--cinematic { aspect-ratio: 16 / 9; }
+.media-frame--portrait { aspect-ratio: 4 / 5; }
+.media-frame--square { aspect-ratio: 1 / 1; }
+.media-frame--placeholder {
+  display: flex;
+  align-items: flex-end;
+}
+.media-frame--placeholder::before {
+  content: "";
+  position: absolute;
+  inset: 8%;
+  border: 1px solid rgba(248,245,237,.1);
+}
+.section--light .media-frame--placeholder::before {
+  border-color: rgba(26,26,24,.1);
+}
+.media-frame-media {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.media-frame-label {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  z-index: 1;
+  max-width: calc(100% - 2rem);
+  margin: 0;
+  font-size: .62rem;
+  font-weight: 500;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  opacity: .64;
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: clamp(2rem, 4vw, 4rem);
+}
+.story-card--featured {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0,1.4fr) minmax(280px,.6fr);
+  gap: clamp(2rem, 4vw, 4rem);
+  align-items: stretch;
+}
+.story-card--featured .story-card-media,
+.story-card--featured .story-card-media .media-frame {
+  height: 100%;
+}
+.story-card--featured .media-frame {
+  min-height: 420px;
+}
+.content-card-copy,
+.experience-card-copy {
+  padding-top: 1.5rem;
+}
+.story-card--featured .content-card-copy {
+  padding-top: 0;
+  align-self: end;
+}
+.content-card-copy h2,
+.experience-card-copy h2 {
+  margin: .8rem 0 1rem;
+  font-size: clamp(1.8rem, 3vw, 3.2rem);
+  line-height: 1.02;
+  letter-spacing: -.04em;
+  font-weight: 400;
+}
+.content-card-copy > p:not(.content-meta),
+.experience-card-copy > p:not(.content-meta) {
+  max-width: 52ch;
+  line-height: 1.55;
+  opacity: .76;
+}
+.content-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .55rem 1rem;
+  margin: 0;
+  font-size: .66rem;
+  font-weight: 500;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  opacity: .62;
+}
+.content-meta span:not(:last-child)::after {
+  content: " /";
+  margin-left: 1rem;
+  opacity: .45;
+}
+.text-link {
+  display: inline-flex;
+  gap: .55rem;
+  margin-top: .75rem;
+  padding-bottom: .28rem;
+  border-bottom: 1px solid currentColor;
+  font-size: .72rem;
+  font-weight: 500;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  transition: opacity var(--ui-fast) var(--ease-resolve);
+}
+.text-link:hover { opacity: .62; }
+
+.experience-grid { margin-top: 4rem; }
+.experience-card {
+  display: grid;
+  grid-template-columns: minmax(0,1.35fr) minmax(300px,.65fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  padding-top: 2rem;
+  border-top: 1px solid var(--line-dark);
+}
+.experience-card-copy {
+  align-self: end;
+  padding-bottom: .5rem;
+}
+
+/*
+ * Resonance Aperture intentionally remains unimplemented until the canonical
+ * Resonance 01 vector master is present. Do not approximate it with CSS masks.
+ */
+
+@media (max-width: 800px) {
+  .section-heading-row,
+  .story-card--featured,
+  .experience-card {
+    grid-template-columns: 1fr;
+  }
+  .story-grid { grid-template-columns: 1fr; }
+  .story-card--featured { grid-column: auto; }
+  .story-card--featured .media-frame { min-height: 0; }
+  .story-card--featured .content-card-copy { padding-top: 1.5rem; }
+}
