@@ -1,10 +1,10 @@
 import { ArrowLink, Section } from "@/components/section";
 import { ExperienceCard } from "@/components/experience-card";
-import { launchExperienceConcepts } from "@/lib/launch-content";
+import { contentRepository } from "@/lib/content/repository";
 
 export const metadata = { title: "Experiences" };
 
-export default function ExperiencesPage() {
+export default async function ExperiencesPage() {\n  const experiences = await contentRepository.listExperiences();
   return (
     <>
       <section className="section section--dark page-hero">
@@ -41,7 +41,7 @@ export default function ExperiencesPage() {
           </div>
         </div>
         <div className="experience-grid">
-          {launchExperienceConcepts.map((experience) => (
+          {experiences.map((experience) => (
             <ExperienceCard key={experience.slug} experience={experience} />
           ))}
         </div>

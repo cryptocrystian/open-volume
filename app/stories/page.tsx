@@ -1,10 +1,10 @@
 import { Section } from "@/components/section";
 import { StoryCard } from "@/components/story-card";
-import { launchStoryConcepts } from "@/lib/launch-content";
+import { contentRepository } from "@/lib/content/repository";
 
 export const metadata = { title: "Stories" };
 
-export default function StoriesPage() {
+export default async function StoriesPage() {\n  const stories = await contentRepository.listStories();
   return (
     <>
       <section className="section section--dark page-hero">
@@ -38,7 +38,7 @@ export default function StoriesPage() {
           </p>
         </div>
         <div className="story-grid">
-          {launchStoryConcepts.map((story, index) => (
+          {stories.map((story, index) => (
             <StoryCard key={story.slug} story={story} featured={index === 0} />
           ))}
         </div>
