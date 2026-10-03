@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import styles from "./story-body.module.css";
 
 function renderInline(text: string): ReactNode[] {
   const parts = text.split(/(\*\*.+?\*\*)/g).filter(Boolean);
@@ -48,7 +49,6 @@ export function StoryBody({ body }: { body: string }) {
     }
 
     if (line.startsWith("# ")) {
-      // The page owns the primary H1; ignore duplicate Markdown H1s.
       flushParagraph();
       continue;
     }
@@ -58,5 +58,5 @@ export function StoryBody({ body }: { body: string }) {
 
   flushParagraph();
 
-  return <div className="story-body">{blocks}</div>;
+  return <div className={styles.body}>{blocks}</div>;
 }
