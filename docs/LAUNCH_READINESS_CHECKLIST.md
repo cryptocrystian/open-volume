@@ -12,12 +12,15 @@
 - [x] contact page
 - [x] social links configurable by environment
 - [x] repository-backed Perspective 01 detail route
-- [ ] canonical Resonance 01 production assets added to /public/brand
-- [ ] real website media added / approved
+- [x] approved raster production identity integrated into site shell
+- [x] first four approved launch visuals integrated into homepage
+- [ ] launch-media minimum expanded to 6–10 approved assets
+- [ ] canonical Resonance 01 SVG production package added to /public/brand
 - [ ] production domain confirmed in NEXT_PUBLIC_SITE_URL
 - [ ] production contact email confirmed
 - [ ] audience-capture webhook connected
-- [ ] audience capture success/failure/duplicate tests
+- [x] audience-capture route hardened for timeout / duplicate / request tracing
+- [ ] audience capture success/failure/duplicate tests against real receiver
 - [ ] privacy notice reviewed against final analytics/email/CRM stack
 - [ ] analytics/consent approach selected
 - [ ] accessibility QA
@@ -32,7 +35,8 @@
 - [ ] TikTok profile created / handle confirmed
 - [ ] YouTube channel created / handle confirmed
 - [ ] LinkedIn company page created / URL confirmed
-- [ ] canonical Resonance avatar added to launch profiles
+- [x] canonical Resonance avatar export prepared
+- [ ] canonical Resonance avatar installed on launch profiles
 - [ ] channel/banner crops approved
 - [ ] profile copy installed
 - [ ] website/social cross-links added
@@ -51,15 +55,16 @@
 - [ ] Artist-led Philosophy asset complete
 - [ ] Stories Introduction asset complete
 - [ ] Something Is Taking Shape teaser complete
-- [ ] first email / Stay Close message prepared
+- [x] first Stay Close welcome-message copy prepared
 
 ## Brand
 - [x] messaging hierarchy locked
 - [x] launch visual reference system locked
 - [x] MAEVRA separation/casting guardrails documented
+- [x] approved raster identity committed / integrated
 - [ ] production logo SVG package in repo
-- [ ] favicon/avatar assets committed from canonical production masters
-- [ ] actual Open Volume identity composited into selected hero media where appropriate
+- [x] favicon/avatar raster exports prepared from canonical identity
+- [ ] actual Open Volume identity composited into selected campaign media where appropriate
 
 ## Launch gate
 Open Volume does not need a full 60-image library before launch.
@@ -73,3 +78,12 @@ The minimum viable public launch should have:
 - 3 launch posts ready immediately
 - 6 additional posts mapped/partially produced
 - Perspective 01 ready to publish
+
+## Current critical path
+1. Connect the real n8n/CRM/email receiver and complete the audience-capture test matrix.
+2. Confirm production domain and contact email values.
+3. Create/confirm social profiles and install avatar/bios/links.
+4. Produce the first three social graphics.
+5. Add 2–6 more launch-quality media assets through batch production rather than one-by-one iteration.
+6. Run final mobile, browser, accessibility and performance QA.
+7. Deploy and verify the production site.
