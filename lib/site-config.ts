@@ -10,7 +10,7 @@ export const siteConfig = {
   description:
     "Open Volume is a music and culture platform creating original performances, experiences and collaborations across physical, virtual and hybrid spaces.",
   brandLine: "Expand the space music can occupy.",
-  url: normalizeUrl(process.env.NEXT_PUBLIC_SITE_URL, "https://openvolume.com"),
+  url: normalizeUrl(process.env.NEXT_PUBLIC_SITE_URL, "https://openvolume.world"),
   contactEmail: process.env.NEXT_PUBLIC_CONTACT_EMAIL?.trim() || "hello@openvolume.com",
   socials: {
     instagram: process.env.NEXT_PUBLIC_INSTAGRAM_URL?.trim() || "",
