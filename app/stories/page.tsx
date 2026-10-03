@@ -4,7 +4,8 @@ import { contentRepository } from "@/lib/content/repository";
 
 export const metadata = { title: "Stories" };
 
-export default async function StoriesPage() {\n  const stories = await contentRepository.listStories();
+export default async function StoriesPage() {
+  const stories = await contentRepository.listStories();
   return (
     <>
       <section className="section section--dark page-hero">
