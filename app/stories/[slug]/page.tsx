@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { StoryBody } from "@/components/story-body";
 import { contentRepository } from "@/lib/content/repository";
+import styles from "./story.module.css";
 
 export async function generateStaticParams() {
   const stories = await contentRepository.listStories();
@@ -47,15 +48,15 @@ export default async function StoryDetailPage({
   }
 
   return (
-    <article className="story-article">
-      <header className="story-article-header">
+    <article className={styles.article}>
+      <header className={styles.header}>
         <p className="eyebrow">Open Volume / {story.category}</p>
         <h1 className="display display--medium">{story.title}</h1>
-        <p className="story-deck">{story.excerpt}</p>
+        <p className={styles.deck}>{story.excerpt}</p>
       </header>
 
-      <div className="story-article-layout">
-        <aside className="story-rail" aria-label="Story information">
+      <div className={styles.layout}>
+        <aside className={styles.rail} aria-label="Story information">
           <p>Open Volume / {story.category}</p>
           <Link href="/stories" className="text-link">
             All Stories <span aria-hidden="true">↗</span>
