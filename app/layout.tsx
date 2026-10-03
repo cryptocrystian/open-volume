@@ -3,6 +3,7 @@ import { Outfit } from "next/font/google";
 import "./globals.css";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { siteConfig } from "@/lib/site-config";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -11,12 +12,28 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.url),
   title: {
     default: "Open Volume — Expand the Space Music Can Occupy",
     template: "%s — Open Volume",
   },
-  description:
-    "Open Volume is a music and culture platform creating original performances, experiences and collaborations across physical, virtual and hybrid spaces.",
+  description: siteConfig.description,
+  applicationName: siteConfig.name,
+  openGraph: {
+    type: "website",
+    siteName: siteConfig.name,
+    title: "Open Volume — Expand the Space Music Can Occupy",
+    description: siteConfig.description,
+    url: siteConfig.url,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Open Volume — Expand the Space Music Can Occupy",
+    description: siteConfig.description,
+  },
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export default function RootLayout({
