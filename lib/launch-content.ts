@@ -1,11 +1,20 @@
 import type { Experience, Story } from "@/lib/content-models";
 
 /**
- * Editorial concepts used to validate the launch-site system.
- * They are not represented as published reporting and do not assert unannounced
- * artists, venues, worlds, partners, dates, or capabilities.
+ * Launch content currently available to the public site.
+ * Draft concepts remain explicitly marked and must not imply unannounced artists,
+ * venues, worlds, partners, dates, or capabilities.
  */
 export const launchStoryConcepts: Story[] = [
+  {
+    slug: "what-makes-a-music-experience-worth-remembering",
+    title: "What makes a music experience worth remembering?",
+    category: "perspective",
+    excerpt:
+      "Beyond scale and spectacle: presence, intention, place and the details that give a performance weight after it ends.",
+    heroAlt: "Open Volume Perspective editorial feature",
+    isDraft: false,
+  },
   {
     slug: "light-as-part-of-the-performance",
     title: "Light as part of the performance",
@@ -13,15 +22,6 @@ export const launchStoryConcepts: Story[] = [
     excerpt:
       "A study of how authored light can shape attention, atmosphere and the way a musical moment is remembered.",
     heroAlt: "Production lighting study placeholder",
-    isDraft: true,
-  },
-  {
-    slug: "what-makes-an-experience-worth-remembering",
-    title: "What makes a music experience worth remembering?",
-    category: "perspective",
-    excerpt:
-      "Beyond scale and spectacle: presence, intention, place, music and the details that make a performance stay with people.",
-    heroAlt: "Audience and performance editorial placeholder",
     isDraft: true,
   },
   {
