@@ -20,8 +20,14 @@
 - [ ] production contact email confirmed
 - [ ] audience-capture webhook connected
 - [x] audience-capture route hardened for timeout / duplicate / request tracing
+- [x] Attio selected as Open Volume CRM/source-of-truth
+- [x] connected Attio workspace audited for People/email/list readiness
+- [ ] Open Volume Audience list created in Attio
+- [ ] Open Volume launch consent/source attributes created in Attio
+- [ ] n8n authenticated to Attio
 - [ ] audience capture success/failure/duplicate tests against real receiver
-- [ ] privacy notice reviewed against final analytics/email/CRM stack
+- [ ] unsubscribe/suppression path verified
+- [ ] privacy notice reviewed against final Attio/email/analytics stack
 - [ ] analytics/consent approach selected
 - [ ] accessibility QA
 - [ ] cross-browser QA
@@ -73,14 +79,14 @@ The minimum viable public launch should have:
 - complete website shell and legal basics
 - real brand identity assets
 - 6–10 strong approved media assets
-- working Stay Close capture
+- working Stay Close capture into Attio
 - live social profiles
 - 3 launch posts ready immediately
 - 6 additional posts mapped/partially produced
 - Perspective 01 ready to publish
 
 ## Current critical path
-1. Connect the real n8n/CRM/email receiver and complete the audience-capture test matrix.
+1. Create the Open Volume Audience list + launch attributes in Attio, connect n8n, and complete the audience-capture test matrix.
 2. Confirm production domain and contact email values.
 3. Create/confirm social profiles and install avatar/bios/links.
 4. Produce the first three social graphics.
