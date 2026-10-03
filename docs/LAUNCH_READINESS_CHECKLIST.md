@@ -16,8 +16,10 @@
 - [x] first four approved launch visuals integrated into homepage
 - [ ] launch-media minimum expanded to 6–10 approved assets
 - [ ] canonical Resonance 01 SVG production package added to /public/brand
-- [ ] production domain confirmed in NEXT_PUBLIC_SITE_URL
-- [ ] production contact email confirmed
+- [x] production domain locked: https://openvolume.world
+- [x] site configuration updated to openvolume.world
+- [ ] Cloudflare zone activated after registrar nameserver propagation
+- [ ] hello@openvolume.world mailbox/forwarding configured and verified
 - [ ] audience-capture webhook connected
 - [x] audience-capture route hardened for timeout / duplicate / request tracing
 - [x] Attio selected as Open Volume CRM/source-of-truth
@@ -86,10 +88,11 @@ The minimum viable public launch should have:
 - Perspective 01 ready to publish
 
 ## Current critical path
-1. Create the Open Volume Audience list + launch attributes in Attio, connect n8n, and complete the audience-capture test matrix.
-2. Confirm production domain and contact email values.
-3. Create/confirm social profiles and install avatar/bios/links.
-4. Produce the first three social graphics.
-5. Add 2–6 more launch-quality media assets through batch production rather than one-by-one iteration.
-6. Run final mobile, browser, accessibility and performance QA.
-7. Deploy and verify the production site.
+1. Let Cloudflare nameserver propagation complete, then wire openvolume.world to the production deployment.
+2. Create the Open Volume Audience list + launch attributes in Attio, connect n8n, and complete the audience-capture test matrix.
+3. Configure and verify hello@openvolume.world.
+4. Create/confirm social profiles and install avatar/bios/links.
+5. Produce the first three social graphics.
+6. Add 2–6 more launch-quality media assets through batch production rather than one-by-one iteration.
+7. Run final mobile, browser, accessibility and performance QA.
+8. Deploy and verify the production site.
