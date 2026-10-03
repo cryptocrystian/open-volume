@@ -4,7 +4,8 @@ import { contentRepository } from "@/lib/content/repository";
 
 export const metadata = { title: "Experiences" };
 
-export default async function ExperiencesPage() {\n  const experiences = await contentRepository.listExperiences();
+export default async function ExperiencesPage() {
+  const experiences = await contentRepository.listExperiences();
   return (
     <>
       <section className="section section--dark page-hero">
