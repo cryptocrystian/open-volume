@@ -111,9 +111,9 @@ These details keep an ambitious production connected to the people inside it.
 
 That is especially important when physical and synthetic elements begin to overlap.
 
-The goal is not to erase the boundary between them.
+The goal is not to blur that distinction for its own sake.
 
-It is to make the experience feel intentional enough that the audience does not have to care where the boundary is.
+It is to make every element—physical or synthetic—serve the experience.
 
 ## The experience should extend beyond the event
 
