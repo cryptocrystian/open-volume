@@ -11,6 +11,7 @@
 - [x] terms page baseline
 - [x] contact page
 - [x] social links configurable by environment
+- [x] repository-backed Perspective 01 detail route
 - [ ] canonical Resonance 01 production assets added to /public/brand
 - [ ] real website media added / approved
 - [ ] production domain confirmed in NEXT_PUBLIC_SITE_URL
@@ -31,17 +32,19 @@
 - [ ] TikTok profile created / handle confirmed
 - [ ] YouTube channel created / handle confirmed
 - [ ] LinkedIn company page created / URL confirmed
-- [ ] canonical Resonance avatar exported
+- [ ] canonical Resonance avatar added to launch profiles
 - [ ] channel/banner crops approved
 - [ ] profile copy installed
 - [ ] website/social cross-links added
+- [x] first 3 post copy/briefs locked
 - [ ] first 3 posts production-ready
 - [ ] first 6 posts scheduled/ready
-- [ ] first 9-post launch sequence mapped
-- [ ] Perspective 01 landing/publishing path live
+- [x] first 9-post launch sequence mapped
+- [x] Perspective 01 landing/publishing path live in code
 
 ## Content
 - [x] Perspective 01 approved
+- [x] Perspective 01 canonical Markdown wired to site
 - [x] first four visual directions locked
 - [x] bulk-image strategy defined
 - [ ] Brand Introduction asset complete
@@ -55,7 +58,7 @@
 - [x] launch visual reference system locked
 - [x] MAEVRA separation/casting guardrails documented
 - [ ] production logo SVG package in repo
-- [ ] favicon/avatar assets exported from canonical symbol
+- [ ] favicon/avatar assets committed from canonical production masters
 - [ ] actual Open Volume identity composited into selected hero media where appropriate
 
 ## Launch gate
