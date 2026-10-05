@@ -31,8 +31,8 @@ test("custom 404 responds correctly", async ({ page }) => {
   await expect(page.locator("main")).toBeVisible();
 });
 
-test("mobile navigation opens", async ({ page, isMobile }) => {
-  test.skip(!isMobile, "mobile project only");
+test("mobile navigation opens", async ({ page }, testInfo) => {
+  test.skip(!testInfo.project.name.startsWith("mobile"), "mobile project only");
   await page.goto("/");
   const menu = page.locator(".mobile-nav summary");
   await expect(menu).toBeVisible();
