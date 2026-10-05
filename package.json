@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "test:e2e": "playwright test",
-    "test:launch": "playwright test tests/launch.spec.ts",
+    "test:launch": "playwright test tests/smoke.spec.ts",
     "lighthouse": "lhci autorun",
     "preview:cf": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "deploy:cf": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
@@ -21,7 +21,6 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@axe-core/playwright": "^4.10.2",
     "@lhci/cli": "^0.15.1",
     "@playwright/test": "^1.55.0",
     "@types/node": "^22.0.0",
