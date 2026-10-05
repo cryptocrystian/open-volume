@@ -11,11 +11,17 @@ for (const route of publicRoutes) {
   });
 }
 
-test("homepage has primary landmarks, visible navigation and a usable join form", async ({ page }) => {
+test("homepage has primary landmarks, navigation and a usable join form", async ({ page }, testInfo) => {
   await page.goto("/", { waitUntil: "networkidle" });
 
   await expect(page.getByRole("heading", { level: 1 })).toContainText("Expand the space music can occupy");
-  await expect(page.getByRole("navigation", { name: "Primary navigation" })).toBeVisible();
+
+  if (testInfo.project.name.startsWith("mobile-")) {
+    await expect(page.locator("details.mobile-nav")).toBeVisible();
+  } else {
+    await expect(page.getByRole("navigation", { name: "Primary navigation" })).toBeVisible();
+  }
+
   await expect(page.getByRole("textbox", { name: "Email address" })).toBeVisible();
   await expect(page.getByRole("button", { name: /Join Open Volume/i })).toBeEnabled();
 });
