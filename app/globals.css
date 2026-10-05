@@ -244,7 +244,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
 .footer-links div { display: grid; gap: .65rem; align-content: start; }
 .footer-links a { font-size: .8rem; opacity: .72; }
 .footer-label { font-size: .7rem; letter-spacing: .16em; text-transform: uppercase; opacity: .72; }
-.footer-muted { font-size: .8rem; opacity: .45; }
+.footer-muted { font-size: .8rem; opacity: .5; }
 
 @media (max-width: 800px) {
   .site-header { grid-template-columns: 1fr auto; }

@@ -18,6 +18,7 @@ export function MediaFrame({
   ratio = "wide",
   label,
   autoplay = false,
+  priority = false,
   className = "",
 }: MediaFrameProps) {
   const classes = ["media-frame", `media-frame--${ratio}`, className]
@@ -48,7 +49,14 @@ export function MediaFrame({
           <source src={src} />
         </video>
       ) : (
-        <img className="media-frame-media" src={src} alt={alt} loading="lazy" />
+        <img
+          className="media-frame-media"
+          src={src}
+          alt={alt}
+          loading={priority ? "eager" : "lazy"}
+          fetchPriority={priority ? "high" : "auto"}
+          decoding="async"
+        />
       )}
       {label ? <figcaption className="media-frame-label">{label}</figcaption> : null}
     </figure>
