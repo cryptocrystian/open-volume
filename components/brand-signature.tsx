@@ -14,10 +14,10 @@ export function BrandSignature({ context = "header" }: BrandSignatureProps) {
       aria-label="Open Volume home"
     >
       <img
-        src="/brand/open-volume-horizontal-bone.png"
+        src="/brand/identity-v1.1/OV_Horizontal_Bone_v1.1.svg"
         alt="Open Volume"
-        width="1267"
-        height="127"
+        width="2120"
+        height="390"
         style={{ display: "block", width, height: "auto", maxWidth: "100%" }}
       />
     </Link>

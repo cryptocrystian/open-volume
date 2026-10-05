@@ -12,10 +12,10 @@
 - [x] contact page
 - [x] social links configurable by environment
 - [x] repository-backed Perspective 01 detail route
-- [x] approved raster production identity integrated into site shell
+- [x] canonical v1.1 SVG production identity integrated into site shell
 - [x] first four approved launch visuals integrated into homepage
 - [ ] launch-media minimum expanded to 6–10 approved assets
-- [ ] canonical Resonance 01 SVG production package added to /public/brand
+- [x] canonical Resonance 01 SVG production package added to /public/brand/identity-v1.1
 - [x] production domain confirmed in NEXT_PUBLIC_SITE_URL
 - [ ] production contact email confirmed
 - [x] audience-capture webhook connected
@@ -69,8 +69,8 @@
 - [x] messaging hierarchy locked
 - [x] launch visual reference system locked
 - [x] MAEVRA separation/casting guardrails documented
-- [x] approved raster identity committed / integrated
-- [ ] production logo SVG package in repo
+- [x] canonical v1.1 SVG identity committed / integrated
+- [x] production logo SVG package in repo
 - [x] favicon/avatar raster exports prepared from canonical identity
 - [ ] actual Open Volume identity composited into selected campaign media where appropriate
 
