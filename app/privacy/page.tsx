@@ -18,7 +18,7 @@ export default function PrivacyPage() {
           Audience records are maintained in Attio and processed through our automation infrastructure. Communications providers may process your email address when needed to deliver messages you requested.
         </p>
         <p>
-          We use Cloudflare Web Analytics for privacy-first site and performance measurement. It does not use advertising cookies or collect visitor personal data. We also record a small number of first-party interaction events, such as selected call-to-action clicks and successful signup events, without storing email addresses or persistent user identifiers in those analytics events.
+          We use Cloudflare Web Analytics for privacy-first site and performance measurement. It does not use advertising cookies or collect visitor personal data. We also record a small number of first-party interaction events in Cloudflare Workers Analytics Engine, such as selected call-to-action clicks and successful signup events. Those events do not contain email addresses, query strings, or persistent user identifiers.
         </p>
         <p>
           Because the current analytics setup does not use advertising or cross-site tracking cookies, Open Volume does not display a separate analytics-cookie consent banner at launch. If that changes, this notice and the consent experience should be updated before the new tracking is enabled.
