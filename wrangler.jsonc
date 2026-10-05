@@ -8,6 +8,12 @@
     "directory": ".open-next/assets",
     "binding": "ASSETS"
   },
+  "analytics_engine_datasets": [
+    {
+      "binding": "OPEN_VOLUME_ANALYTICS",
+      "dataset": "open_volume_events"
+    }
+  ],
   "observability": {
     "enabled": true
   }

@@ -27,13 +27,15 @@
 - [x] n8n authenticated to Attio
 - [x] audience capture success/failure/duplicate tests against real receiver
 - [ ] unsubscribe/suppression path verified
-- [ ] privacy notice reviewed against final Attio/email/analytics stack
-- [x] analytics/consent approach selected — Cloudflare Web Analytics + anonymous first-party interaction events; no advertising-cookie banner at launch
-- [ ] accessibility QA
-- [ ] cross-browser QA
-- [ ] mobile visual QA
-- [ ] Core Web Vitals / performance QA
-- [ ] 404 and error-state QA
+- [ ] privacy notice final review after production email provider is confirmed; analytics/Attio portions updated
+- [x] analytics/consent implemented — Cloudflare Web Analytics + anonymous Workers Analytics Engine events; no advertising-cookie banner at launch
+- [x] automated WCAG 2.1 AA scan passes on core desktop/mobile pages
+- [x] cross-browser route/render QA passes in Chromium, Firefox and WebKit
+- [x] automated mobile navigation + horizontal-overflow QA passes on Pixel/iPhone profiles
+- [ ] focused mobile visual/composition review as part of Homepage Visual Design v2
+- [x] Lighthouse launch performance budget passes on production build; Cloudflare Web Analytics provides ongoing RUM/Core Web Vitals
+- [x] branded 404 route passes automated QA
+- [x] application/global error boundaries implemented
 - [x] production deployment verified
 
 ## Social
@@ -91,4 +93,4 @@ The minimum viable public launch should have:
 3. Recover the canonical Resonance 01 SVG master package; do not recreate it from raster artwork.
 4. Produce the first three social graphics once the canonical identity files are available.
 5. Add 2–6 more launch-quality media assets through batch production rather than one-by-one iteration.
-6. Complete final mobile, browser, accessibility and performance QA, then run the dedicated Homepage Visual Design v2 pass.
+6. Run the dedicated Homepage Visual Design v2 pass, including manual desktop/mobile visual review and the header/logo presentation fix.
