@@ -28,8 +28,15 @@ export function ArrowLink({
   href: string;
   children: ReactNode;
 }) {
+  const label = typeof children === "string" ? children : "cta";
+
   return (
-    <a href={href} className="arrow-link">
+    <a
+      href={href}
+      className="arrow-link"
+      data-analytics-event="cta_click"
+      data-analytics-label={label}
+    >
       {children}<span aria-hidden="true">↗</span>
     </a>
   );

@@ -494,3 +494,25 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
 @media (max-width: 560px) {
   .footer-links { grid-template-columns: 1fr; }
 }
+
+
+/* Accessibility + resilient error states */
+.skip-link {
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
+  z-index: 1000;
+  transform: translateY(-180%);
+  padding: .7rem 1rem;
+  background: var(--bone);
+  color: var(--charcoal);
+  border: 1px solid var(--charcoal);
+  transition: transform var(--ui-fast) var(--ease-resolve);
+}
+.skip-link:focus { transform: translateY(0); }
+.error-state { min-height: 70svh; display: flex; flex-direction: column; justify-content: center; }
+.error-actions { display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 2.5rem; }
+.button-link { appearance: none; background: transparent; color: inherit; cursor: pointer; }
+@media (forced-colors: active) {
+  .arrow-link, .nav-cta, .legal-copy a { border-bottom: 1px solid CanvasText; }
+}

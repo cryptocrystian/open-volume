@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from "react";
+import { trackAnalyticsEvent } from "@/lib/analytics-client";
 
 type JoinFormProps = {
   source: "homepage" | "join-page";
@@ -40,6 +41,7 @@ export function JoinForm({ source }: JoinFormProps) {
       event.currentTarget.reset();
       setState("success");
       setMessage("You’re in. We’ll share something when it is worth sharing.");
+      void trackAnalyticsEvent("join_success", { source });
     } catch (error) {
       setState("error");
       setMessage(error instanceof Error ? error.message : "We could not add you right now.");
