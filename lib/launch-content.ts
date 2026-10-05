@@ -1,4 +1,5 @@
 import type { Experience, Story } from "@/lib/content-models";
+import { perspective01Body } from "@/lib/content/perspective-01";
 
 /**
  * Launch content currently available to the public site.
@@ -13,6 +14,7 @@ export const launchStoryConcepts: Story[] = [
     excerpt:
       "Beyond scale and spectacle: presence, intention, place and the details that give a performance weight after it ends.",
     heroAlt: "Open Volume Perspective editorial feature",
+    body: perspective01Body,
     isDraft: false,
   },
   {
