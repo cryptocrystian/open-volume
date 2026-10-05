@@ -16,25 +16,25 @@
 - [x] first four approved launch visuals integrated into homepage
 - [ ] launch-media minimum expanded to 6–10 approved assets
 - [ ] canonical Resonance 01 SVG production package added to /public/brand
-- [ ] production domain confirmed in NEXT_PUBLIC_SITE_URL
+- [x] production domain confirmed in NEXT_PUBLIC_SITE_URL
 - [ ] production contact email confirmed
-- [ ] audience-capture webhook connected
+- [x] audience-capture webhook connected
 - [x] audience-capture route hardened for timeout / duplicate / request tracing
 - [x] Attio selected as Open Volume CRM/source-of-truth
 - [x] connected Attio workspace audited for People/email/list readiness
-- [ ] Open Volume Audience list created in Attio
-- [ ] Open Volume launch consent/source attributes created in Attio
-- [ ] n8n authenticated to Attio
-- [ ] audience capture success/failure/duplicate tests against real receiver
+- [x] Open Volume Audience list created in Attio
+- [x] Open Volume launch consent/source attributes created in Attio
+- [x] n8n authenticated to Attio
+- [x] audience capture success/failure/duplicate tests against real receiver
 - [ ] unsubscribe/suppression path verified
 - [ ] privacy notice reviewed against final Attio/email/analytics stack
-- [ ] analytics/consent approach selected
+- [x] analytics/consent approach selected — Cloudflare Web Analytics + anonymous first-party interaction events; no advertising-cookie banner at launch
 - [ ] accessibility QA
 - [ ] cross-browser QA
 - [ ] mobile visual QA
 - [ ] Core Web Vitals / performance QA
 - [ ] 404 and error-state QA
-- [ ] production deployment verified
+- [x] production deployment verified
 
 ## Social
 - [ ] Instagram profile created / handle confirmed
@@ -86,10 +86,9 @@ The minimum viable public launch should have:
 - Perspective 01 ready to publish
 
 ## Current critical path
-1. Create the Open Volume Audience list + launch attributes in Attio, connect n8n, and complete the audience-capture test matrix.
-2. Confirm production domain and contact email values.
-3. Create/confirm social profiles and install avatar/bios/links.
-4. Produce the first three social graphics.
+1. Confirm production contact email / Resend domain and finish unsubscribe/suppression wiring.
+2. Create/confirm social profiles and install avatar/bios/links.
+3. Recover the canonical Resonance 01 SVG master package; do not recreate it from raster artwork.
+4. Produce the first three social graphics once the canonical identity files are available.
 5. Add 2–6 more launch-quality media assets through batch production rather than one-by-one iteration.
-6. Run final mobile, browser, accessibility and performance QA.
-7. Deploy and verify the production site.
+6. Complete final mobile, browser, accessibility and performance QA, then run the dedicated Homepage Visual Design v2 pass.
