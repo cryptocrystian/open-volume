@@ -29,6 +29,8 @@
 - [ ] unsubscribe/suppression path verified
 - [ ] privacy notice reviewed against final Attio/email/analytics stack
 - [x] analytics/consent approach selected — Cloudflare Web Analytics + anonymous first-party interaction events; no advertising-cookie banner at launch
+- [x] Cloudflare Web Analytics auto-install verified for openvolume.world
+- [x] repeatable browser/performance QA suite added to CI
 - [ ] accessibility QA
 - [ ] cross-browser QA
 - [ ] mobile visual QA
