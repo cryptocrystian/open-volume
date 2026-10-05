@@ -448,7 +448,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
   margin: .8rem 0 0;
   font-size: .72rem;
   line-height: 1.4;
-  opacity: .5;
+  opacity: .68;
 }
 .form-status {
   min-height: 1.4em;
