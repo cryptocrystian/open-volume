@@ -1,4 +1,5 @@
 import { ArrowLink } from "@/components/section";
+import { launchMedia } from "@/lib/launch-media";
 
 export const metadata = { title: "Partners + Collaborators" };
 
@@ -14,7 +15,7 @@ export default function PartnersPage() {
       </header>
 
       <section className="v3-photo-strip">
-        <img src="/media/ov-v3-hero.webp" alt="Destination electronic music production overlooking the sea" fetchPriority="high" />
+        <img src={launchMedia.destination} alt="Destination electronic music production overlooking the sea" fetchPriority="high" />
       </section>
 
       <section className="v3-light">
@@ -46,7 +47,7 @@ export default function PartnersPage() {
       </section>
 
       <section className="v3-media-card">
-        <img src="/media/ov-v3-night-crowd.webp" alt="Electronic music audience inside an architectural night production" />
+        <img src={launchMedia.artist} alt="Electronic vocalist and producer performing live" loading="eager" />
         <div className="v3-overlay">
           <div><p className="v3-kicker">Artists</p><h2>The artist is not inventory.</h2></div>
           <div><p>Open Volume is built around artists with a point of view. We look for music, identity and ambition that can support a production worth making—and give the artist a larger canvas without forcing the work into a fixed house format.</p><ArrowLink href="mailto:hello@openvolume.world">Propose an Artist Collaboration</ArrowLink></div>
