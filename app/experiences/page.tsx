@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowLink } from "@/components/section";
 import { contentRepository } from "@/lib/content/repository";
+import { launchMedia } from "@/lib/launch-media";
 
 export const metadata = { title: "Experiences" };
 
@@ -15,7 +16,7 @@ export default async function ExperiencesPage() {
       </header>
 
       <section className="v3-media-card">
-        <img src="/media/ov-v3-hero.webp" alt="Electronic music production overlooking the sea at sunset" fetchPriority="high" />
+        <img src={launchMedia.destination} alt="Electronic music production overlooking the sea at sunset" fetchPriority="high" />
         <div className="v3-overlay">
           <div><p className="v3-kicker">The Standard</p><h2>A format should earn its reason to exist.</h2></div>
           <p>Artist fit, music, environment, production design, performance technology, film language and release strategy are developed as one idea. Technology is used when it creates a better performance—not when novelty is the product.</p>
@@ -58,7 +59,7 @@ export default async function ExperiencesPage() {
         </div>
       </section>
 
-      <section className="v3-photo-strip"><img src="/media/ov-v3-night-crowd.webp" alt="Audience gathered inside a large electronic music production at night" /></section>
+      <section className="v3-photo-strip"><img src={launchMedia.crowd} alt="Audience gathered inside a large electronic music production at night" loading="eager" /></section>
     </div>
   );
 }
