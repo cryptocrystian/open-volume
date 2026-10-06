@@ -7,25 +7,31 @@ export default function HomePage() {
     <>
       <section className="section section--dark hero">
         <div className="section-inner">
-          <p className="eyebrow">Open Volume / Music + Culture</p>
-          <h1 className="display">Expand the space music can occupy.</h1>
+          <p className="eyebrow">Open Volume / Electronic Music + Culture</p>
+          <h1 className="display">Electronic music, without fixed boundaries.</h1>
           <p className="lede">
-            Open Volume creates and curates original performances, experiences and collaborations across physical, virtual and hybrid spaces.
+            Open Volume creates original electronic-music performances, films, live experiences and cultural programming across physical, virtual and hybrid spaces.
+          </p>
+          <p className="body-large" style={{ maxWidth: "54rem", marginTop: "1.5rem" }}>
+            Built around artists. Produced with intent. Designed to move between screen, stage and real life.
           </p>
           <div className="hero-actions">
-            <ArrowLink href="/experiences">Explore Open Volume</ArrowLink>
-            <ArrowLink href="/join">Get Updates</ArrowLink>
+            <ArrowLink href="/experiences">Explore Experiences</ArrowLink>
+            <ArrowLink href="/join">Follow Open Volume</ArrowLink>
           </div>
         </div>
       </section>
 
-      <Section tone="light" eyebrow="Recorded / Live / Physical / Virtual / Hybrid">
+      <Section tone="light" eyebrow="What Open Volume Makes">
         <div className="split">
-          <h2 className="display display--medium">Different formats. One creative standard.</h2>
+          <h2 className="display display--medium">The format changes. The production standard does not.</h2>
           <div className="stack body-large">
-            <p>Open Volume brings artists, places, collaborators and technology together to create performances and experiences around the music.</p>
-            <p>Some are watched. Some are attended. Some unfold across multiple places. Some may exist only because new tools make them possible.</p>
-            <p><strong>The format changes. The standard does not.</strong></p>
+            <p>
+              A cinematic performance. A destination session. A live or hybrid production. A collaboration that connects artists in different places. An original world that exists only because the music calls for it.
+            </p>
+            <p>
+              Open Volume brings together creative direction, production design, performance technology, film, sound, place and distribution around one idea: make the music feel larger without making the technology the story.
+            </p>
           </div>
         </div>
       </Section>
@@ -33,13 +39,13 @@ export default function HomePage() {
       <Section eyebrow="For Artists">
         <div className="split split--media">
           <div>
-            <h2 className="display display--medium">The artist leads. The format follows.</h2>
+            <h2 className="display display--medium">Build a bigger world around the music.</h2>
             <div className="body-large">
               <p>
-                Every Open Volume production begins with the music and the person behind it. Creative direction, environment, collaborators and technology are shaped around the artist—not the other way around.
+                Open Volume gives electronic artists a larger creative canvas: cinematic production, environments, collaborators, visual storytelling, live and hybrid formats, and media built to travel beyond the performance itself.
               </p>
               <p>
-                The goal is not to place artists inside an Open Volume template. It is to give them more room to create something worth remembering.
+                The artist stays at the center. The production is shaped around the sound, identity and ambition of the work—not around a house template.
               </p>
             </div>
             <ArrowLink href="/partners">Create With Open Volume</ArrowLink>
@@ -60,16 +66,16 @@ export default function HomePage() {
             ratio="wide"
           />
           <div>
-            <h2 className="display display--medium">More than something to watch.</h2>
+            <h2 className="display display--medium">Come for the music. Stay for what surrounds it.</h2>
             <p className="body-large">
-              Open Volume creates performances and experiences designed to hold attention, create anticipation and stay with people after they end.
+              Open Volume is for people who want more from electronic music than another clip in the feed. We follow the artists, places, ideas and creative decisions around each production—and build more ways to experience them over time.
             </p>
             <div className="statement-lines">
-              <p>Come for the music.</p>
-              <p>Discover the artists, places, ideas and collaborations around it.</p>
-              <p>Return because Open Volume itself becomes something worth following.</p>
+              <p>We watch the performances.</p>
+              <p>We discover the artists and stories around them.</p>
+              <p>We show up when the experience moves into the real world.</p>
             </div>
-            <p style={{ marginTop: "2.5rem" }}><ArrowLink href="/experiences">Explore Experiences</ArrowLink></p>
+            <p style={{ marginTop: "2.5rem" }}><ArrowLink href="/experiences">See What Is Taking Shape</ArrowLink></p>
           </div>
         </div>
       </Section>
@@ -77,11 +83,14 @@ export default function HomePage() {
       <Section eyebrow="Open Volume Presents">
         <div className="split split--media">
           <div>
-            <h2 className="display display--medium">Something is taking shape.</h2>
-            <p className="body-large">A new Open Volume experience is in development.</p>
+            <h2 className="display display--medium">The first productions are taking shape.</h2>
+            <p className="body-large">
+              Original electronic-music performances built around artists, place, cinematic capture and ambitious production.
+            </p>
             <div className="statement-lines">
-              <p>Music. Place. Light.</p>
-              <p>Movement. Collaboration.</p>
+              <p>Recorded and live.</p>
+              <p>Physical, virtual and hybrid.</p>
+              <p>Revealed when they are ready.</p>
             </div>
             <p style={{ marginTop: "2.5rem" }}><ArrowLink href="/join">Be First to Know</ArrowLink></p>
           </div>
@@ -97,9 +106,9 @@ export default function HomePage() {
       <Section tone="light" eyebrow="Stories">
         <div className="section-heading-row">
           <div>
-            <h2 className="display display--medium">The culture around the performance matters too.</h2>
+            <h2 className="display display--medium">The performance is only part of the story.</h2>
             <p className="lede" style={{ marginLeft: 0 }}>
-              Open Volume follows the artists, places, creative decisions and ideas shaping how music is experienced.
+              Open Volume follows the artists, scenes, places, production craft and ideas shaping electronic music now—and where it may go next.
             </p>
           </div>
           <MediaFrame
@@ -109,41 +118,42 @@ export default function HomePage() {
           />
         </div>
         <div className="card-grid">
-          <article className="card"><h3>Artists</h3><p>Conversations, perspectives and the people behind the work.</p></article>
-          <article className="card"><h3>Places</h3><p>Venues, destinations and environments that change what a performance can become.</p></article>
-          <article className="card"><h3>Process</h3><p>Creative direction, production craft and the decisions behind the experience.</p></article>
+          <article className="card"><h3>Artists</h3><p>Conversations, releases, perspectives and the people behind the work.</p></article>
+          <article className="card"><h3>Scenes + Places</h3><p>The venues, cities, destinations and communities where electronic music takes on a life of its own.</p></article>
+          <article className="card"><h3>Process</h3><p>Production design, performance craft, technology and the decisions behind the experience.</p></article>
         </div>
         <p style={{ marginTop: "2rem" }}><ArrowLink href="/stories">Explore Stories</ArrowLink></p>
       </Section>
 
-      <Section eyebrow="Collaborate">
-        <h2 className="display display--medium">Create something with a reason to exist.</h2>
+      <Section eyebrow="Partners + Collaborators">
+        <h2 className="display display--medium">The right partners become part of the work.</h2>
         <p className="lede" style={{ marginLeft: 0 }}>
-          Open Volume works with artists, venues, destinations, brands and creative partners when the collaboration adds real value to the experience.
+          Open Volume works selectively with venues, destinations, brands and creative collaborators that can contribute something meaningful to the production, the audience or the culture around it.
         </p>
         <div className="rule-list">
-          <div className="rule-row"><p>Venues + Destinations</p><p>Turn place into part of the experience through distinctive programming, creative direction and production.</p></div>
-          <div className="rule-row"><p>Brands + Partners</p><p>Participate in culture with purpose, with integration shaped by fit rather than commodity exposure.</p></div>
-          <div className="rule-row"><p>Creative Collaborators</p><p>A serious canvas for directors, designers, filmmakers, architects, visual artists, musicians and technologists.</p></div>
+          <div className="rule-row"><p>Venues + Destinations</p><p>Exceptional places with the potential to become part of the creative idea—not simply a backdrop.</p></div>
+          <div className="rule-row"><p>Brands + Sponsors</p><p>Selective cultural partnerships built around fit, access and creative contribution rather than commodity logo inventory.</p></div>
+          <div className="rule-row"><p>Creative Collaborators</p><p>Directors, designers, filmmakers, architects, visual artists, musicians and technologists capable of elevating the work.</p></div>
         </div>
-        <p style={{ marginTop: "2.5rem" }}><ArrowLink href="/partners">Partner With Open Volume</ArrowLink></p>
+        <p style={{ marginTop: "2.5rem" }}><ArrowLink href="/partners">Explore Partnership Opportunities</ArrowLink></p>
       </Section>
 
       <Section tone="mineral">
         <div className="split">
-          <h2 className="display display--medium">Open Volume is built for possibility.</h2>
+          <h2 className="display display--medium">A platform designed to move between screen, stage and real life.</h2>
           <div className="body-large">
-            <p>Music can live on a stage. Inside a film. Across a city. Within a destination. Between physical and virtual spaces.</p>
-            <p>Alongside new forms of performance that have not yet become conventional.</p>
-            <p><strong>Open Volume exists to keep that possibility open.</strong></p>
+            <p>
+              Open Volume begins with electronic music, but it is being built as something larger than a performance series: original productions, artist discovery, editorial, destinations, collaborations and live programming under one recognizable cultural point of view.
+            </p>
+            <p><strong>The technology expands what is possible. The music remains the reason.</strong></p>
           </div>
         </div>
       </Section>
 
       <Section tone="light" eyebrow="Stay Close">
-        <h2 className="display display--medium">Be there before it happens.</h2>
-        <p className="body-large">New performances. Artist stories. Premieres. Places. Collaborations. Open Volume announcements.</p>
-        <p className="body-large">Shared when there is something worth sharing.</p>
+        <h2 className="display display--medium">Know what is coming before it arrives.</h2>
+        <p className="body-large">New productions. Artist stories. Premieres. Places. Collaborations. Live announcements.</p>
+        <p className="body-large">No constant noise. Just the things worth following.</p>
         <JoinForm source="homepage" />
       </Section>
     </>
