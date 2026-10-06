@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
 import "./site-polish.css";
+import "./v3-pages.css";
 import { AnalyticsTracker } from "@/components/analytics-tracker";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
