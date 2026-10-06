@@ -5,13 +5,17 @@ export const metadata = { title: "Join" };
 
 export default function JoinPage() {
   return (
-    <Section tone="light" eyebrow="Join Open Volume">
-      <h1 className="display">Be there before it happens.</h1>
-      <p className="page-copy">Open Volume is building new performances, artist collaborations, places, stories and experiences.</p>
-      <p className="body-large">Join for early announcements, premieres, artist features, editorial and the moments worth knowing about before everyone else does.</p>
+    <Section tone="light" eyebrow="Follow Open Volume">
+      <h1 className="display">Come with us from the beginning.</h1>
+      <p className="page-copy">
+        Open Volume is building a new electronic-music and culture platform around original performances, artists, places, stories and live experiences.
+      </p>
+      <p className="body-large">
+        Join for first looks at new productions, premieres, artist stories, destination reveals, live announcements and the work taking shape behind the scenes.
+      </p>
       <JoinForm source="join-page" />
       <div className="page-block">
-        <p className="body-large"><strong>No filler. No constant noise.<br />Just the things worth sharing.</strong></p>
+        <p className="body-large"><strong>No constant noise.<br />Just the things worth following.</strong></p>
       </div>
     </Section>
   );

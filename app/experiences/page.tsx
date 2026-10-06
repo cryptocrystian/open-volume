@@ -11,34 +11,49 @@ export default async function ExperiencesPage() {
       <section className="section section--dark page-hero">
         <div className="section-inner">
           <p className="eyebrow">Open Volume / Experiences</p>
-          <h1 className="display">Music, without a fixed container.</h1>
+          <h1 className="display">Electronic music can occupy more than one kind of stage.</h1>
           <p className="page-copy">
-            Open Volume creates and curates performances and experiences across physical, virtual and hybrid spaces. The music determines what the experience becomes.
+            Open Volume develops original productions around artists, performance, place and cinematic storytelling. The format can be recorded, live, physical, virtual or hybrid—but the music remains the center of gravity.
           </p>
         </div>
       </section>
 
-      <Section tone="light" eyebrow="What can live here">
+      <Section tone="light" eyebrow="Formats">
         <div className="rule-list">
-          <div className="rule-row"><p>Performances</p><p>Artist-led productions built around music, presence and creative direction.</p></div>
-          <div className="rule-row"><p>Sessions</p><p>More intimate formats designed for discovery, experimentation and repeat programming.</p></div>
-          <div className="rule-row"><p>Live + Hybrid</p><p>Concerts, festivals, venue collaborations and productions connecting physical and digital environments when the concept calls for it.</p></div>
-          <div className="rule-row"><p>Destinations</p><p>Experiences shaped around places with their own identity, atmosphere and cultural weight.</p></div>
-          <div className="rule-row"><p>Worlds</p><p>Original Open Volume creative properties that can support recurring performances and visual languages without defining the platform as a whole.</p></div>
+          <div className="rule-row"><p>Flagship Performances</p><p>Artist-led productions with a complete creative premise: performance, environment, visual direction, capture and release treated as one work.</p></div>
+          <div className="rule-row"><p>Sessions</p><p>More intimate electronic-music formats for discovery, experimentation, collaboration and repeat programming.</p></div>
+          <div className="rule-row"><p>Live + Hybrid</p><p>Concerts, venue collaborations and future festival-scale programming that can connect physical audiences with digital and spatial layers when the idea earns it.</p></div>
+          <div className="rule-row"><p>Destination Productions</p><p>Performances built around places with enough identity to become part of the creative concept, not simply scenery.</p></div>
+          <div className="rule-row"><p>Distributed Performance</p><p>Multiple artists, vocalists or ensembles performing together across one or more locations when the creative concept benefits from it.</p></div>
+          <div className="rule-row"><p>Open Volume Worlds</p><p>Reusable creative environments and performance properties that can evolve across artists and productions without turning the platform into a virtual-world proposition.</p></div>
         </div>
       </Section>
 
-      <Section eyebrow="Current programming">
+      <Section eyebrow="The Standard">
+        <div className="split">
+          <h2 className="display display--medium">A different format should still feel unmistakably Open Volume.</h2>
+          <div className="body-large">
+            <p>
+              Every production begins with a reason to exist. Artist fit, music, environment, production design, performance technology, film language and release strategy are developed around that premise.
+            </p>
+            <p>
+              New technology is used when it creates a better performance or a new form of presence—not because novelty is the product.
+            </p>
+          </div>
+        </div>
+      </Section>
+
+      <Section tone="light" eyebrow="Current Programming">
         <div className="section-heading-row">
           <div>
-            <p className="eyebrow">Initial slate</p>
-            <h2 className="display display--small">First experiences coming soon.</h2>
+            <p className="eyebrow">Initial Slate</p>
+            <h2 className="display display--small">The first productions are in development.</h2>
           </div>
           <div>
             <p className="body-large">
-              Open Volume is developing its initial slate of performances, places and collaborations. We will reveal specifics when they are creatively and operationally ready.
+              The initial slate is being built to prove the range of the platform: different artists, different environments and different production formats held to one creative standard. Specifics will be revealed when the work is ready.
             </p>
-            <ArrowLink href="/join">Get Updates</ArrowLink>
+            <ArrowLink href="/join">Follow the First Releases</ArrowLink>
           </div>
         </div>
         <div className="experience-grid">
