@@ -13,10 +13,13 @@
   vertical-align: middle;
 }
 
-.headingBlock > h1,
-.headingBlock > h2,
-.headingBlock > h3 {
-  margin-bottom: clamp(1.75rem, 3.5vw, 3rem) !important;
+.headingBlock > h1 + p,
+.headingBlock > h1 + div,
+.headingBlock > h2 + p,
+.headingBlock > h2 + div,
+.headingBlock > h3 + p,
+.headingBlock > h3 + div {
+  margin-top: clamp(1.75rem, 3vw, 2.5rem) !important;
 }
 
 .contentMedia,
@@ -47,30 +50,35 @@
 }
 
 @media (max-width: 900px) {
-  .headingBlock > h1,
-  .headingBlock > h2,
-  .headingBlock > h3 {
-    margin-bottom: 2rem !important;
+  .headingBlock > h1 + p,
+  .headingBlock > h1 + div,
+  .headingBlock > h2 + p,
+  .headingBlock > h2 + div,
+  .headingBlock > h3 + p,
+  .headingBlock > h3 + div {
+    margin-top: 2rem !important;
   }
 
   .mobileStackGap {
-    row-gap: 2.75rem !important;
+    row-gap: 3rem !important;
   }
 
   .contentMedia {
     display: block !important;
     min-height: 20rem !important;
     width: 100% !important;
-    margin-top: .5rem;
+    margin-top: .75rem;
   }
 
   .contentMedia figure {
+    display: block !important;
     min-height: 20rem !important;
     height: auto !important;
     aspect-ratio: 4 / 5;
   }
 
   .contentMedia img {
+    display: block !important;
     min-height: 20rem !important;
     height: 100% !important;
     object-fit: cover !important;
@@ -79,17 +87,20 @@
 
 @media (max-width: 600px) {
   .eyebrowAccent {
-    margin-bottom: 1.4rem !important;
+    margin-bottom: 1.5rem !important;
   }
 
-  .headingBlock > h1,
-  .headingBlock > h2,
-  .headingBlock > h3 {
-    margin-bottom: 1.75rem !important;
+  .headingBlock > h1 + p,
+  .headingBlock > h1 + div,
+  .headingBlock > h2 + p,
+  .headingBlock > h2 + div,
+  .headingBlock > h3 + p,
+  .headingBlock > h3 + div {
+    margin-top: 2.1rem !important;
   }
 
   .mobileStackGap {
-    row-gap: 2.5rem !important;
+    row-gap: 3.25rem !important;
   }
 
   .contentMedia,
