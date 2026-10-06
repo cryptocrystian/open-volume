@@ -1,0 +1,180 @@
+/* Global visual polish shared by homepage and subpages. */
+
+/* Make the oxide accent part of the site-wide visual language, not homepage-only. */
+.eyebrow {
+  color: var(--oxide);
+  opacity: 1;
+}
+
+.eyebrow::before {
+  content: "";
+  display: inline-block;
+  width: 1.4rem;
+  height: 2px;
+  margin: 0 .7rem .18rem 0;
+  background: var(--oxide);
+  vertical-align: middle;
+}
+
+.page-hero {
+  position: relative;
+}
+
+.page-hero::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: min(9rem, 30vw);
+  height: 3px;
+  background: var(--oxide);
+}
+
+/* Consistent separation between large display headlines and the copy that follows. */
+.display + .page-copy,
+.display + .lede,
+.display + .body-large,
+.display--medium + .body-large,
+.display--medium + .lede,
+.display--small + .body-large,
+.page-block h2 + p,
+.page-block h3 + p {
+  margin-top: clamp(1.75rem, 3vw, 2.75rem);
+}
+
+.split > .display + .body-large,
+.split > .display--medium + .body-large,
+.split > .display--small + .body-large {
+  margin-top: 0;
+}
+
+/* Ensure all production media has deterministic geometry on small screens. */
+.media-frame,
+.story-card-media,
+.experience-card > a {
+  display: block;
+  width: 100%;
+}
+
+.media-frame-media {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+@media (max-width: 800px) {
+  .section-inner {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .page-hero .section-inner {
+    min-height: auto;
+    padding-top: 5.5rem;
+    padding-bottom: 5rem;
+  }
+
+  .page-hero .display + .page-copy,
+  .display + .lede,
+  .display + .body-large,
+  .display--medium + .body-large,
+  .display--medium + .lede,
+  .display--small + .body-large,
+  .page-block h2 + p,
+  .page-block h3 + p {
+    margin-top: 2rem;
+  }
+
+  .split,
+  .section-heading-row,
+  .story-card--featured,
+  .experience-card {
+    row-gap: 2.75rem;
+  }
+
+  .section-heading-row > div + div,
+  .split > div + div {
+    margin-top: .25rem;
+  }
+
+  .media-frame {
+    min-height: 18rem;
+  }
+
+  .media-frame--portrait {
+    aspect-ratio: 4 / 5;
+    min-height: 24rem;
+  }
+
+  .media-frame--wide,
+  .media-frame--cinematic,
+  .media-frame--square {
+    min-height: 20rem;
+  }
+
+  .story-card-media,
+  .experience-card > a {
+    min-height: 20rem;
+  }
+
+  .story-card-media .media-frame,
+  .experience-card > a .media-frame {
+    min-height: inherit;
+  }
+}
+
+@media (max-width: 560px) {
+  .eyebrow {
+    margin-bottom: 1.5rem;
+  }
+
+  .section-inner {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+
+  .page-hero .section-inner {
+    padding-top: 4.75rem;
+    padding-bottom: 4.5rem;
+  }
+
+  .display,
+  .display--medium,
+  .display--small {
+    margin-bottom: 0;
+  }
+
+  .page-hero .display + .page-copy,
+  .display + .lede,
+  .display + .body-large,
+  .display--medium + .body-large,
+  .display--medium + .lede,
+  .display--small + .body-large,
+  .page-block h2 + p,
+  .page-block h3 + p {
+    margin-top: 2.15rem;
+  }
+
+  .split,
+  .section-heading-row,
+  .story-card--featured,
+  .experience-card {
+    row-gap: 3rem;
+  }
+
+  .media-frame,
+  .media-frame--wide,
+  .media-frame--cinematic,
+  .media-frame--square,
+  .story-card-media,
+  .experience-card > a {
+    min-height: 22rem;
+  }
+
+  .media-frame--portrait {
+    min-height: 26rem;
+  }
+}
