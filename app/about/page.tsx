@@ -1,4 +1,5 @@
 import { ArrowLink } from "@/components/section";
+import { launchMedia } from "@/lib/launch-media";
 
 export const metadata = { title: "About" };
 
@@ -6,7 +7,7 @@ export default function AboutPage() {
   return (
     <div className="v3-page">
       <section className="v3-about-hero">
-        <img src="/media/ov-v3-hero.webp" alt="Open-air electronic music production at sunset" fetchPriority="high" />
+        <img src={launchMedia.destination} alt="Open-air electronic music production at sunset" fetchPriority="high" />
         <div className="v3-about-inner">
           <p className="v3-kicker">About Open Volume</p>
           <h1>A production platform built from electronic music outward.</h1>
@@ -22,7 +23,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="v3-photo-strip"><img src="/media/ov-v3-night-crowd.webp" alt="Electronic music crowd gathered inside an architectural night production" /></section>
+      <section className="v3-photo-strip"><img src={launchMedia.artist} alt="Electronic vocalist and producer performing under warm amber and cobalt stage light" loading="eager" /></section>
 
       <section className="v3-light">
         <div className="v3-wrap">
