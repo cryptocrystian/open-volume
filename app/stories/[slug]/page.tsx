@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { StoryBody } from "@/components/story-body";
 import { contentRepository } from "@/lib/content/repository";
+import { launchMedia } from "@/lib/launch-media";
 import styles from "./story.module.css";
 
 export async function generateStaticParams() {
@@ -49,11 +50,14 @@ export default async function StoryDetailPage({
 
   return (
     <article className={styles.article}>
-      <header className={styles.header}>
-        <p className="eyebrow">Open Volume / {story.category}</p>
-        <h1 className="display display--medium">{story.title}</h1>
-        <p className={styles.deck}>{story.excerpt}</p>
-      </header>
+      <section className="v3-subhero">
+        <div className="v3-subhero-media" aria-hidden="true"><img className="v3-image" src={launchMedia.club} alt="" fetchPriority="high" /></div>
+        <div className="v3-wrap v3-subhero-content">
+          <p className="v3-kicker">Open Volume / {story.category}</p>
+          <h1 className="v3-display v3-subhero-title">{story.title}</h1>
+          <p className="v3-copy v3-subhero-copy">{story.excerpt}</p>
+        </div>
+      </section>
 
       <div className={styles.layout}>
         <aside className={styles.rail} aria-label="Story information">
