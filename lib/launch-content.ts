@@ -13,7 +13,8 @@ export const launchStoryConcepts: Story[] = [
     category: "perspective",
     excerpt:
       "Beyond scale and spectacle: presence, intention, place and the details that give a performance weight after it ends.",
-    heroAlt: "Open Volume Perspective editorial feature",
+    heroMedia: "/media/ov-v3-night-crowd.webp",
+    heroAlt: "Electronic music audience gathered inside an architectural night production",
     body: perspective01Body,
     isDraft: false,
   },
@@ -23,7 +24,8 @@ export const launchStoryConcepts: Story[] = [
     category: "process",
     excerpt:
       "A study of how authored light can shape attention, atmosphere and the way a musical moment is remembered.",
-    heroAlt: "Production lighting study placeholder",
+    heroMedia: "/media/ov-v3-night-crowd.webp",
+    heroAlt: "Electronic music production lighting across a night audience",
     isDraft: true,
   },
   {
@@ -32,7 +34,8 @@ export const launchStoryConcepts: Story[] = [
     category: "places",
     excerpt:
       "How architecture, environment and context can change the emotional weight of a performance without becoming the headline themselves.",
-    heroAlt: "Place-led music experience placeholder",
+    heroMedia: "/media/ov-v3-hero.webp",
+    heroAlt: "Open-air electronic music production set against a coastal sunset",
     isDraft: true,
   },
 ];
@@ -46,6 +49,7 @@ export const launchExperienceConcepts: Experience[] = [
     status: "development",
     summary:
       "The initial Open Volume slate is in development. Artist, place and format will be revealed when the creative premise and production plan are ready.",
-    heroAlt: "Controlled Open Volume production fragment placeholder",
+    heroMedia: "/media/ov-v3-hero.webp",
+    heroAlt: "Open-air electronic music production at sunset",
   },
 ];

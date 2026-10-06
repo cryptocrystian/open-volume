@@ -1,26 +1,22 @@
 import { JoinForm } from "@/components/join-form";
-import { MediaFrame } from "@/components/media-frame";
 import { ArrowLink } from "@/components/section";
-import styles from "./home-v2.module.css";
-import tune from "./home-v2-tuning.module.css";
+import styles from "./home-v3.module.css";
 
 export default function HomePage() {
   return (
-    <main className={styles.home}>
-      <section className={`${styles.hero} ${tune.oxideEdge}`}>
-        <div className={`${styles.heroMedia} ${tune.backgroundMedia}`} aria-hidden="true">
-          <img src="/media/ov-img-001-destination-reveal.webp" alt="" />
+    <div className={styles.home}>
+      <section className={styles.hero}>
+        <div className={styles.heroPhoto} aria-hidden="true">
+          <img src="/media/ov-v3-hero.webp" alt="" fetchPriority="high" />
         </div>
         <div className={styles.heroInner}>
-          <p className={`${styles.heroEyebrow} ${tune.eyebrowAccent}`}>Open Volume / Electronic Music + Culture</p>
+          <p className={styles.eyebrow}>Open Volume / Electronic Music + Culture</p>
           <h1 className={styles.heroTitle}>Electronic music, without fixed boundaries.</h1>
-          <div className={`${styles.heroBottom} ${tune.mobileStackGap}`}>
-            <p className={styles.heroMeta}>Recorded / Live / Physical / Virtual / Hybrid</p>
-            <div className={tune.headingBlock}>
-              <p className={styles.heroCopy}>
-                Open Volume creates original electronic-music performances, films, live experiences and cultural programming across physical, virtual and hybrid spaces.
-              </p>
-              <div className={styles.heroActions}>
+          <div className={styles.heroFooter}>
+            <p className={styles.meta}>Recorded / Live / Physical / Virtual / Hybrid</p>
+            <div>
+              <p className={styles.heroCopy}>Open Volume creates original electronic-music performances, films, live experiences and cultural programming across physical, virtual and hybrid spaces.</p>
+              <div className={styles.actions}>
                 <ArrowLink href="/experiences">Explore Experiences</ArrowLink>
                 <ArrowLink href="/join">Follow Open Volume</ArrowLink>
               </div>
@@ -29,210 +25,114 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className={styles.lightSection}>
-        <div className={styles.sectionInner}>
-          <p className={`${styles.sectionEyebrow} ${tune.eyebrowAccent}`}>What Open Volume Makes</p>
-          <div className={`${styles.thesisGrid} ${tune.mobileStackGap}`}>
-            <h2 className={styles.thesisTitle}>The format changes. The production standard does not.</h2>
-            <div className={styles.thesisCopy}>
-              <div className={styles.thesisRule} />
-              <p>
-                A cinematic performance. A destination session. A live or hybrid production. A collaboration connecting artists in different places. An original world that exists only because the music calls for it.
-              </p>
-              <p>
-                Creative direction, production design, performance technology, film, sound, place and distribution come together around one idea: make the music feel larger without making the technology the story.
-              </p>
-            </div>
+      <section className={styles.thesis}>
+        <div className={styles.thesisInner}>
+          <p className={styles.eyebrow}>What Open Volume Makes</p>
+          <h2 className={styles.thesisLine}>The music sets the premise. Everything else follows.</h2>
+          <div className={styles.thesisFoot}>
+            <p className={styles.meta}>Artist / Place / Production / Film / Audience</p>
+            <p>A cinematic performance. A destination session. A live or hybrid production. An original environment. The format changes; the creative standard does not.</p>
           </div>
         </div>
       </section>
 
-      <section className={styles.darkSection}>
-        <div className={styles.sectionInner}>
-          <div className={`${styles.artistGrid} ${tune.mobileStackGap}`}>
-            <div className={`${styles.artistMedia} ${tune.contentMedia}`}>
-              <MediaFrame
-                src="/media/ov-img-003-electronic-vocalist.webp"
-                alt="Electronic vocalist performing under cobalt and violet stage light"
-                ratio="portrait"
-              />
-            </div>
-            <div className={`${styles.artistCopy} ${tune.headingBlock}`}>
-              <p className={`${styles.sectionEyebrow} ${tune.eyebrowAccent}`}>For Artists</p>
-              <h2 className={styles.featureTitle}>Build a bigger world around the music.</h2>
-              <div className={styles.featureCopy}>
-                <p>
-                  Open Volume gives electronic artists a larger creative canvas: cinematic production, environments, collaborators, visual storytelling, live and hybrid formats, and media built to travel beyond the performance itself.
-                </p>
-                <p>
-                  The artist stays at the center. The production is shaped around the sound, identity and ambition of the work—not around a house template.
-                </p>
-              </div>
-              <p style={{ marginTop: "2.25rem" }}><ArrowLink href="/partners">Create With Open Volume</ArrowLink></p>
-            </div>
+      <section className={styles.feature}>
+        <div className={styles.featureImage} aria-hidden="true">
+          <img src="/media/ov-v3-night-crowd.webp" alt="" />
+        </div>
+        <div className={styles.featureCopy}>
+          <div className={styles.featurePanel}>
+            <p className={styles.eyebrow}>For Artists</p>
+            <h2>Build a bigger world around the music.</h2>
+            <p>Open Volume gives electronic artists a larger creative canvas: cinematic production, environments, collaborators, visual storytelling, live and hybrid formats, and media built to travel beyond the performance itself.</p>
+            <p><strong>The artist stays at the center.</strong></p>
+            <div className={styles.actions}><ArrowLink href="/partners">Create With Open Volume</ArrowLink></div>
           </div>
         </div>
       </section>
 
-      <section className={styles.lightSection}>
-        <div className={styles.sectionInner}>
-          <div className={`${styles.audienceGrid} ${tune.mobileStackGap}`}>
-            <div className={`${styles.audienceCopy} ${tune.headingBlock}`}>
-              <p className={`${styles.sectionEyebrow} ${tune.eyebrowAccent}`}>For the Audience</p>
-              <h2 className={styles.featureTitle}>Come for the music. Stay for what surrounds it.</h2>
-              <p className={styles.featureCopy}>
-                Open Volume is for people who want more from electronic music than another clip in the feed. We follow the artists, places, ideas and creative decisions around each production—and build more ways to experience them over time.
-              </p>
-              <div className={styles.audienceLines}>
-                <p>We watch the performances.</p>
-                <p>We discover the artists and stories around them.</p>
-                <p>We show up when the experience moves into the real world.</p>
-              </div>
-              <p style={{ marginTop: "2.25rem" }}><ArrowLink href="/experiences">See What Is Taking Shape</ArrowLink></p>
+      <section className={styles.pulse}>
+        <div className={styles.pulseInner}>
+          <div className={styles.pulsePhoto} aria-hidden="true">
+            <img src="/media/ov-v3-hero.webp" alt="" />
+          </div>
+          <div className={styles.pulseText}>
+            <p className={styles.eyebrow}>For the Audience</p>
+            <h2>The music brings us together. The world around it gives us more to return to.</h2>
+            <div className={styles.pulseLines}>
+              <p>We watch the performances.</p>
+              <p>We discover the artists and stories around them.</p>
+              <p>We show up when the experience moves into the real world.</p>
             </div>
-            <div className={`${styles.audienceMedia} ${tune.contentMedia}`}>
-              <MediaFrame
-                src="/media/ov-img-004-premium-club-crowd.webp"
-                alt="Crowd inside a premium electronic music venue with layered blue and violet lighting"
-                ratio="portrait"
-              />
-            </div>
+            <div className={styles.actions}><ArrowLink href="/experiences">See What Is Taking Shape</ArrowLink></div>
           </div>
         </div>
       </section>
 
-      <section className={`${styles.presents} ${tune.oxideEdge}`}>
-        <div className={`${styles.presentsMedia} ${tune.backgroundMedia}`} aria-hidden="true">
-          <MediaFrame
-            src="/media/ov-img-001-destination-reveal.webp"
-            alt=""
-            ratio="cinematic"
-            priority
-          />
-        </div>
+      <section className={styles.presents}>
+        <img src="/media/ov-v3-night-crowd.webp" alt="" aria-hidden="true" />
         <div className={styles.presentsInner}>
-          <p className={`${styles.heroEyebrow} ${tune.eyebrowAccent}`}>Open Volume Presents</p>
-          <div className={`${styles.presentsRow} ${tune.mobileStackGap}`}>
-            <h2 className={styles.presentsTitle}>The first productions are taking shape.</h2>
-            <div className={tune.headingBlock}>
-              <p className={styles.presentsCopy}>
-                Original electronic-music performances built around artists, place, cinematic capture and ambitious production.
-              </p>
-              <p className={styles.presentsMeta}>Recorded and live / Physical, virtual and hybrid / Revealed when they are ready</p>
-              <p style={{ marginTop: "2rem" }}><ArrowLink href="/join">Be First to Know</ArrowLink></p>
+          <p className={styles.eyebrow}>Open Volume Presents</p>
+          <div className={styles.presentsGrid}>
+            <h2>The first productions are taking shape.</h2>
+            <div className={styles.presentsSide}>
+              <p>Original electronic-music performances built around artists, place, cinematic capture and ambitious production.</p>
+              <p className={styles.meta}>Recorded and live / Physical, virtual and hybrid / Revealed when ready</p>
+              <div className={styles.actions}><ArrowLink href="/join">Be First to Know</ArrowLink></div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className={styles.lightSection}>
-        <div className={styles.sectionInner}>
-          <p className={`${styles.sectionEyebrow} ${tune.eyebrowAccent}`}>Stories</p>
-          <div className={`${styles.storiesHeading} ${tune.mobileStackGap}`}>
-            <h2 className={styles.storyTitle}>The performance is only part of the story.</h2>
-            <p className={styles.storiesIntro}>
-              Open Volume follows the artists, scenes, places, production craft and ideas shaping electronic music now—and where it may go next.
-            </p>
+      <section className={styles.stories}>
+        <div className={styles.storiesInner}>
+          <div className={styles.storiesHeader}>
+            <div>
+              <p className={styles.eyebrow}>Stories / Perspective</p>
+              <h2>The performance is only part of the story.</h2>
+            </div>
+            <p>Open Volume follows the artists, scenes, places, production craft and ideas shaping electronic music now—and where it may go next.</p>
           </div>
-          <div className={styles.editorialGrid}>
-            <article className={`${styles.editorialFeature} ${tune.headingBlock}`}>
-              <div className={`${styles.editorialFeatureMedia} ${tune.contentMedia}`}>
-                <MediaFrame
-                  src="/media/ov-img-002-club-intimacy.webp"
-                  alt="DJ performing within arm's reach of a dense warehouse-club crowd"
-                  ratio="cinematic"
-                />
-              </div>
-              <p className={`${styles.editorialKicker} ${tune.eyebrowAccent}`}>Inside the culture</p>
+          <div className={styles.storyLayout}>
+            <article className={styles.storyFeature}>
+              <div className={styles.storyPhoto}><img src="/media/ov-v3-night-crowd.webp" alt="Electronic music crowd gathered around an architectural night-stage environment" /></div>
               <h3>Artists, scenes and the choices behind the work.</h3>
               <p>Follow releases, conversations, creative decisions and the people shaping what electronic music becomes next.</p>
             </article>
-            <div className={styles.editorialStack}>
-              <article className={styles.editorialItem}>
-                <div>
-                  <p className={styles.editorialKicker}>01</p>
-                  <h3>Artists</h3>
-                </div>
-                <p>Conversations, releases, perspectives and the people behind the work.</p>
-              </article>
-              <article className={styles.editorialItem}>
-                <div>
-                  <p className={styles.editorialKicker}>02</p>
-                  <h3>Scenes + Places</h3>
-                </div>
-                <p>The venues, cities, destinations and communities where electronic music takes on a life of its own.</p>
-              </article>
-              <article className={styles.editorialItem}>
-                <div>
-                  <p className={styles.editorialKicker}>03</p>
-                  <h3>Process</h3>
-                </div>
-                <p>Production design, performance craft, technology and the decisions behind the experience.</p>
-              </article>
+            <div className={styles.storyRail}>
+              <article><div><p className={styles.eyebrow}>01</p><h3>Artists</h3></div><p>Conversations, releases, perspectives and the people behind the work.</p></article>
+              <article><div><p className={styles.eyebrow}>02</p><h3>Scenes + Places</h3></div><p>The venues, cities, destinations and communities where electronic music takes on a life of its own.</p></article>
+              <article><div><p className={styles.eyebrow}>03</p><h3>Process</h3></div><p>Production design, performance craft, technology and the decisions behind the experience.</p></article>
             </div>
           </div>
-          <p style={{ marginTop: "2.25rem" }}><ArrowLink href="/stories">Explore Stories</ArrowLink></p>
+          <div className={styles.actions}><ArrowLink href="/stories">Explore Stories</ArrowLink></div>
         </div>
       </section>
 
-      <section className={styles.darkSection}>
-        <div className={styles.sectionInner}>
-          <p className={`${styles.sectionEyebrow} ${tune.eyebrowAccent}`}>Partners + Collaborators</p>
-          <div className={`${styles.partnerIntro} ${tune.mobileStackGap}`}>
-            <h2 className={styles.partnerTitle}>The right partners become part of the work.</h2>
-            <div className={styles.partnerSide}>
-              <p>Open Volume works selectively with organizations and collaborators that can contribute something meaningful to the production, the audience or the culture around it.</p>
-            </div>
+      <section className={styles.partners}>
+        <div className={styles.partnersInner}>
+          <div className={styles.partnerTop}>
+            <div><p className={styles.eyebrow}>Partners + Collaborators</p><h2>The right partners become part of the work.</h2></div>
+            <p>Open Volume works selectively with organizations and collaborators that can contribute something meaningful to the production, the audience or the culture around it.</p>
           </div>
-          <div className={styles.partnerRows}>
-            <div className={styles.partnerRow}>
-              <h3>Venues + Destinations</h3>
-              <p>Exceptional places with the potential to become part of the creative idea—not simply a backdrop.</p>
-            </div>
-            <div className={styles.partnerRow}>
-              <h3>Brands + Sponsors</h3>
-              <p>Selective cultural partnerships built around fit, access and creative contribution rather than commodity logo inventory.</p>
-            </div>
-            <div className={styles.partnerRow}>
-              <h3>Creative Collaborators</h3>
-              <p>Directors, designers, filmmakers, architects, visual artists, musicians and technologists capable of elevating the work.</p>
-            </div>
-          </div>
-          <p className={styles.partnerAction}><ArrowLink href="/partners">Explore Partnership Opportunities</ArrowLink></p>
-        </div>
-      </section>
-
-      <section className={styles.mineralSection}>
-        <div className={styles.sectionInner}>
-          <div className={styles.platformStatement}>
-            <p className={`${styles.sectionEyebrow} ${tune.eyebrowAccent}`}>The Platform</p>
-            <h2 className={styles.platformWords} aria-label="Screen. Stage. Real life.">
-              <span>Screen.</span>
-              <span>Stage.</span>
-              <span>Real life.</span>
-            </h2>
-            <p className={styles.platformCopy}>
-              Open Volume begins with electronic music, but it is being built as something larger than a performance series: original productions, artist discovery, editorial, destinations, collaborations and live programming under one recognizable cultural point of view. <strong>The technology expands what is possible. The music remains the reason.</strong>
-            </p>
+          <div className={styles.partnerList}>
+            <article><h3>Venues + Destinations</h3><p>Turn a distinctive place into part of the creative idea.</p><ArrowLink href="/partners">Explore</ArrowLink></article>
+            <article><h3>Brands + Sponsors</h3><p>Earn cultural presence by contributing to the work.</p><ArrowLink href="/partners">Explore</ArrowLink></article>
+            <article><h3>Creative Collaborators</h3><p>Bring a point of view capable of changing the outcome.</p><ArrowLink href="/partners">Explore</ArrowLink></article>
           </div>
         </div>
       </section>
 
-      <section className={styles.lightSection}>
-        <div className={styles.sectionInner}>
-          <div className={`${styles.signupGrid} ${tune.mobileStackGap}`}>
-            <div>
-              <p className={`${styles.sectionEyebrow} ${tune.eyebrowAccent}`}>Stay Close</p>
-              <h2 className={styles.signupTitle}>Know what is coming before it arrives.</h2>
-            </div>
-            <div className={styles.signupCopy}>
-              <p>New productions. Artist stories. Premieres. Places. Collaborations. Live announcements.</p>
-              <p><strong>No constant noise. Just the things worth following.</strong></p>
-              <JoinForm source="homepage" />
-            </div>
+      <section className={styles.close}>
+        <div className={styles.closeInner}>
+          <p className={styles.eyebrow}>The Platform</p>
+          <h2 className={styles.closeWords}><span>Screen.</span><span>Stage.</span><span>Real life.</span></h2>
+          <div className={styles.signup}>
+            <div><p className={styles.eyebrow}>Stay Close</p><h2>Know what is coming before it arrives.</h2></div>
+            <div className={styles.signupCopy}><p>New productions. Artist stories. Premieres. Places. Collaborations. Live announcements.</p><p><strong>No constant noise. Just the things worth following.</strong></p><JoinForm source="homepage" /></div>
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }
