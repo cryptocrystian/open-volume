@@ -1,0 +1,1 @@
+The Visual Design v2 hero image source was selected from the approved Open Volume social visual direction. The final binary asset should be uploaded as `public/media/ov-home-hero-v2.webp`; the homepage implementation references that path.
