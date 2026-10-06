@@ -1,5 +1,6 @@
 import { JoinForm } from "@/components/join-form";
 import { ArrowLink } from "@/components/section";
+import { launchMedia } from "@/lib/launch-media";
 import styles from "./home-v3.module.css";
 
 export default function HomePage() {
@@ -7,7 +8,7 @@ export default function HomePage() {
     <div className={styles.home}>
       <section className={styles.hero}>
         <div className={styles.heroPhoto} aria-hidden="true">
-          <img src="/media/ov-v3-hero.webp" alt="" fetchPriority="high" />
+          <img src={launchMedia.destination} alt="" fetchPriority="high" />
         </div>
         <div className={styles.heroInner}>
           <p className={styles.eyebrow}>Open Volume / Electronic Music + Culture</p>
@@ -38,7 +39,7 @@ export default function HomePage() {
 
       <section className={styles.feature}>
         <div className={styles.featureImage} aria-hidden="true">
-          <img src="/media/ov-v3-night-crowd.webp" alt="" />
+          <img src={launchMedia.artist} alt="" loading="eager" />
         </div>
         <div className={styles.featureCopy}>
           <div className={styles.featurePanel}>
@@ -53,8 +54,8 @@ export default function HomePage() {
 
       <section className={styles.pulse}>
         <div className={styles.pulseInner}>
-          <div className={styles.pulsePhoto} aria-hidden="true">
-            <img src="/media/ov-v3-hero.webp" alt="" />
+          <div className={styles.pulsePhoto}>
+            <img src={launchMedia.crowd} alt="Electronic music audience gathered inside a contemporary club" loading="eager" />
           </div>
           <div className={styles.pulseText}>
             <p className={styles.eyebrow}>For the Audience</p>
@@ -70,7 +71,7 @@ export default function HomePage() {
       </section>
 
       <section className={styles.presents}>
-        <img src="/media/ov-v3-night-crowd.webp" alt="" aria-hidden="true" />
+        <img src={launchMedia.destination} alt="" aria-hidden="true" loading="eager" />
         <div className={styles.presentsInner}>
           <p className={styles.eyebrow}>Open Volume Presents</p>
           <div className={styles.presentsGrid}>
@@ -95,7 +96,7 @@ export default function HomePage() {
           </div>
           <div className={styles.storyLayout}>
             <article className={styles.storyFeature}>
-              <div className={styles.storyPhoto}><img src="/media/ov-v3-night-crowd.webp" alt="Electronic music crowd gathered around an architectural night-stage environment" /></div>
+              <div className={styles.storyPhoto}><img src={launchMedia.club} alt="DJ performing within arm's reach of an intimate electronic music crowd" loading="eager" /></div>
               <h3>Artists, scenes and the choices behind the work.</h3>
               <p>Follow releases, conversations, creative decisions and the people shaping what electronic music becomes next.</p>
             </article>

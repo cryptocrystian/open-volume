@@ -1,5 +1,6 @@
 import type { Experience, Story } from "@/lib/content-models";
 import { perspective01Body } from "@/lib/content/perspective-01";
+import { launchMedia } from "@/lib/launch-media";
 
 /**
  * Launch content currently available to the public site.
@@ -13,8 +14,8 @@ export const launchStoryConcepts: Story[] = [
     category: "perspective",
     excerpt:
       "Beyond scale and spectacle: presence, intention, place and the details that give a performance weight after it ends.",
-    heroMedia: "/media/ov-v3-night-crowd.webp",
-    heroAlt: "Electronic music audience gathered inside an architectural night production",
+    heroMedia: launchMedia.club,
+    heroAlt: "Electronic music audience gathered close to an intimate club performance",
     body: perspective01Body,
     isDraft: false,
   },
@@ -24,7 +25,7 @@ export const launchStoryConcepts: Story[] = [
     category: "process",
     excerpt:
       "A study of how authored light can shape attention, atmosphere and the way a musical moment is remembered.",
-    heroMedia: "/media/ov-v3-night-crowd.webp",
+    heroMedia: launchMedia.crowd,
     heroAlt: "Electronic music production lighting across a night audience",
     isDraft: true,
   },
@@ -34,7 +35,7 @@ export const launchStoryConcepts: Story[] = [
     category: "places",
     excerpt:
       "How architecture, environment and context can change the emotional weight of a performance without becoming the headline themselves.",
-    heroMedia: "/media/ov-v3-hero.webp",
+    heroMedia: launchMedia.destination,
     heroAlt: "Open-air electronic music production set against a coastal sunset",
     isDraft: true,
   },
@@ -49,7 +50,7 @@ export const launchExperienceConcepts: Experience[] = [
     status: "development",
     summary:
       "The initial Open Volume slate is in development. Artist, place and format will be revealed when the creative premise and production plan are ready.",
-    heroMedia: "/media/ov-v3-hero.webp",
+    heroMedia: launchMedia.destination,
     heroAlt: "Open-air electronic music production at sunset",
   },
 ];

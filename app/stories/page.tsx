@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { contentRepository } from "@/lib/content/repository";
+import { launchMedia } from "@/lib/launch-media";
 
 export const metadata = { title: "Stories" };
 
@@ -9,7 +10,7 @@ export default async function StoriesPage() {
   return (
     <div className="v3-page">
       <section className="v3-editorial-hero">
-        <div className="v3-editorial-photo"><img src="/media/ov-v3-night-crowd.webp" alt="Electronic music crowd gathered close to a night performance" fetchPriority="high" /></div>
+        <div className="v3-editorial-photo"><img src={launchMedia.club} alt="Electronic music crowd gathered close to a night performance" fetchPriority="high" /></div>
         <div className="v3-editorial-copy">
           <p className="v3-kicker">Open Volume / Stories</p>
           <h1>The culture around the performance matters too.</h1>
@@ -25,7 +26,7 @@ export default async function StoriesPage() {
           <h2 className="v3-big">Taste over volume.</h2>
           <div className="v3-story-list">
             <article className="v3-story-main">
-              <div className="v3-story-image"><img src="/media/ov-v3-hero.webp" alt="Electronic music event set against a coastal sunset" /></div>
+              <div className="v3-story-image"><img src={launchMedia.destination} alt="Electronic music event set against a coastal sunset" loading="eager" /></div>
               <p className="v3-kicker" style={{marginTop:"1.5rem"}}>Perspective</p>
               <h2>{featured?.title ?? "What makes a music experience worth remembering?"}</h2>
               <p className="v3-copy">{featured?.excerpt ?? "A look at the decisions, environments and shared moments that turn a performance into something people carry with them."}</p>
@@ -49,7 +50,7 @@ export default async function StoriesPage() {
         </div>
       </section>
 
-      <section className="v3-photo-strip"><img src="/media/ov-v3-night-crowd.webp" alt="Nighttime electronic music audience and production environment" /></section>
+      <section className="v3-photo-strip"><img src={launchMedia.crowd} alt="Nighttime electronic music audience and production environment" loading="eager" /></section>
     </div>
   );
 }
