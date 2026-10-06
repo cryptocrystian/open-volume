@@ -1,1 +1,0 @@
-Visual Design v2 implementation in progress.
