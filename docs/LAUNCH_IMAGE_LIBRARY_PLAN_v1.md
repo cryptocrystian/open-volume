@@ -232,3 +232,52 @@ Each image should move through:
 **Concept → Generate/Shoot → Select → Retouch → Brand application if needed → Crop set → QA → Approved**
 
 Never treat raw AI generation as a final production asset.
+
+
+## v2 photographic production constraints
+
+This plan is governed by `OPEN_VOLUME_PHOTOGRAPHIC_DOCTRINE_v2.md`.
+
+### Non-negotiable production direction
+
+The library must read as **electronic-music photojournalism elevated by world-class production design**.
+
+Do not use "premium EDM," "cinematic EDM," "immersive," or "futuristic" as sufficient art direction. Those terms have repeatedly collapsed generation toward synthetic defaults.
+
+### Required visual spread
+
+Across each production wave, deliberately vary:
+- lighting source and color world
+- venue type
+- camera position
+- artist demographics
+- performer role
+- crowd density
+- time of day
+- photographic genre
+
+No wave should be dominated by:
+- golden hour / amber
+- dark haze + white beams
+- blue-magenta club light
+- attractive face-forward crowds
+- brunette female performer archetypes
+- giant LED / portal / ring spectacle
+
+### No-repeat placement rule
+
+For launch website placement:
+- no primary image should appear twice on the homepage
+- no subpage hero should reuse the homepage hero
+- no two adjacent sections should use the same subject archetype or venue world
+- social covers should not simply reuse website hero crops unless intentionally part of one campaign
+
+### Approval gate
+
+Every candidate entering the approved library must pass:
+1. three-second EDM category test
+2. physical-production plausibility
+3. crowd / gaze logic review
+4. MAEVRA-exclusion review when applicable
+5. 200% zoom inspection
+6. distinctiveness check against the existing approved library

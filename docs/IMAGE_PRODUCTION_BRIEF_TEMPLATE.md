@@ -168,3 +168,60 @@ The image is approved only if:
 5. no invented brand identity is present
 6. it survives intended crops
 7. it feels culturally credible rather than generic stock
+
+
+---
+
+## Reference frame requirement
+
+Before generating or commissioning the image, attach or identify **2–4 real photographic references** for the function of the shot.
+
+References may come from credible electronic-music photojournalism, club photography, concert/festival photography, venue photography, or production reportage. Use them to define:
+- camera position
+- crowd behavior
+- performer/audience relationship
+- venue logic
+- lighting source
+- documentary texture
+
+Do **not** copy a specific photographer's composition or style. The references establish physical and cultural credibility.
+
+## Three-second EDM test
+
+State exactly what makes the image read as electronic music / EDM culture without logo or caption.
+
+If the answer is vague, the brief is not ready.
+
+## Human casting specification
+
+For any performer or foreground audience subject, define enough distinct traits to prevent model-default repetition.
+
+For generic female performers, explicitly confirm:
+- [ ] this is not MAEVRA
+- [ ] at least three major visual traits differ from MAEVRA
+- [ ] the subject does not repeat another approved Open Volume performer archetype
+
+## Crowd spatial logic
+
+If a crowd and performer are both visible, define:
+- performer location
+- audience orientation
+- camera position
+- expected mix of attention (watching / dancing / talking / moving / filming)
+- why the overall gaze direction makes sense
+
+## Final zoom QA
+
+Before approval inspect the full-resolution file at **200%** for:
+- [ ] duplicate or near-duplicate faces
+- [ ] repeated bodies / outfits / hairstyles
+- [ ] malformed hands / fingers
+- [ ] suspicious facial geometry
+- [ ] impossible eye lines
+- [ ] physically impossible equipment
+- [ ] inconsistent lighting / shadows
+- [ ] fake text / signage
+- [ ] plastic or overly rendered skin
+- [ ] background cloning / repeated architecture
+
+A frame that passes at thumbnail size but fails zoom inspection is **not approved**.
